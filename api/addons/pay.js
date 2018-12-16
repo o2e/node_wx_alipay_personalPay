@@ -25,7 +25,7 @@ router.get('/addons/pay/api/setting', async (ctx, next) => {
     }
     // 验证签名
     if(params.sign != md5(md5(params.apiurl) + secretkey)) {
-        ctx.body = errSign;
+        ctx.body = errSign('密匙不正确!');
     } else {
         ctx.body = {
             code: 1,
