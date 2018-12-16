@@ -8,24 +8,34 @@ nodeJS版个人支付免签系统
 实现原理： 监听支付宝客户端推送信息，最安全的一种方式；
 
 后台Demo地址: pay.yio.me 账号密码 admin
+
 支付Demo地址: http://pay.yio.me/#/goods/DwnNGCW4VLk1CjemIiUqf
+
 安装方式
+
     !!! 依赖nodeJS + mysql + redis 环境
+
     1.下载全部源码；
+
     2.修改 /com目录中 config.js 和 email.js 文件；
+
     3.在根目录中运行 npm install 安装依赖；
+
     4.在根目录中运行 node app.js 没有错误信息,访问ip:80即可访问;
+
     5.监听运行建议使用 pm2 ;
     
 ----------
 使用方法
     1.添加商品
+
     ![添加商品][1]
 
 
   注意，这里的价格设置的是一元
   
   2.上传收款二维码
+  
     ![收款二维码][2]
 
    收款二维码和商品价格的关系：
@@ -52,7 +62,7 @@ nodeJS版个人支付免签系统
      http://pay.yio.me/#/goods/74ct1zBzZBW8YGFBKe-Yf
 
     史上最低价格，只需20元啊，等什么呢！
-    
+
     第一次价格20元，后面会持续涨价2018年12月16日。
     
   [1]: http://static.yio.me/1544963117843.png
