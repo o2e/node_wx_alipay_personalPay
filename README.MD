@@ -30,20 +30,29 @@ nodeJS版个人支付免签系统
 
    收款二维码和商品价格的关系：
         用户付款后 -> 客户端通知后台 微信 或者 支付宝，收到多少金额，后台做相应的处理;
+
         为了避免同一金额在同一时间被支付，订单有效期为5分钟，在商品的金额上随机下调,范围0.10元，那么一个1元的商品需要上传 1.00、0.99、0.98 ... 0.92 、0.91 十个微信+支付宝收款二维码；
 
 3.商品的地址统一是
     http://localhost/#/goods/DwnNGCW4VLk1CjemIiUqf
+
     "DwnNGCW4VLk1CjemIiUqf"是商品nanoid
 4.客户端配置说明
     api 地址填写： http(s)://localhost/addons/pay/
+
     签名密匙填写： config.js里的 secretkey 值
+
 5.请把支付宝/微信/收款客户端加入手机清理白名单，并保持网络畅通；
+
 6.全部代码是开源的，客户端需要赞助使用；
 
 最后：
-    客户端需赞助地址         http://pay.yio.me/#/goods/74ct1zBzZBW8YGFBKe-Yf
+    客户端需赞助地址        
+
+     http://pay.yio.me/#/goods/74ct1zBzZBW8YGFBKe-Yf
+
     史上最低价格，只需20元啊，等什么呢！
+    
     第一次价格20元，后面会持续涨价2018年12月16日。
     
   [1]: http://static.yio.me/1544963117843.png
